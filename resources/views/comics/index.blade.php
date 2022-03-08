@@ -19,6 +19,9 @@
                     <th>{{ $comic->price }}</th>
                     <th>{{ $comic->sale_date }}</th>
                     <th>{{ $comic->type }}</th>
+                    <th>
+                        <a href="{{ route('comics.show', $comic->id) }}">Details</a>
+                    </th>
                 </tr>
             @endforeach
         </tbody>
