@@ -3,6 +3,10 @@
 @section('pageTitle', 'FULL LIST')
 
 @section('mainContent')
+    <div class="d-flex">
+        <h1>COMICS LIST</h1>
+        <a href="{{ route('comics.create') }}">ADD NEW COMIC</a>
+    </div>
     <table class="table">
         <thead>
             <tr>
