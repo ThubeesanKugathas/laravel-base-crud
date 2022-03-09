@@ -15,4 +15,11 @@
             </ul>
         </div>
     </div>
+    <div class="">
+        <a href="{{ route('comics.edit', $comic->id) }}">Change</a>
+        @include('partials.deleteLink', [
+            "route" => 'comics.destroy',
+            "id" => $comic->id
+        ])
+    </div>
 @endsection

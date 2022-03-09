@@ -26,6 +26,15 @@
                     <th>
                         <a href="{{ route('comics.show', $comic->id) }}">Details</a>
                     </th>
+                    <th>
+                        <a href="{{ route('comics.edit', $comic->id) }}">Change</a>
+                    </th>
+                    <th>
+                        @include('partials.deleteLink', [
+                            "route" => 'comics.destroy',
+                            "id" => $comic->id
+                        ])
+                    </th>
                 </tr>
             @endforeach
         </tbody>
