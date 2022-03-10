@@ -5,8 +5,18 @@ namespace App\Http\Controllers;
 use App\Comic;
 use Illuminate\Http\Request;
 
-class ComicController extends Controller
-{
+class ComicController extends Controller {
+    
+    protected $comicValidation = [
+        "title" => "required|min:5",
+        "description" => "required|min:10",
+        "thumb" => "nullable|url",
+        "price" => "required|numeric|between:0.00,999.99",
+        "series" => "required|min:5",
+        "sale_date" => "required|date_format:Y-m-d",
+        "type" => "required|min:5",
+    ];
+    
     /**
      * Display a listing of the resource.
      *
@@ -34,7 +44,7 @@ class ComicController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request) {
-        $data = $request->all();
+        $data = $request->validate($this->comicValidation);
 
         $newComic = new Comic();
 
@@ -80,7 +90,7 @@ class ComicController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Comic $comic) {
-        $data = $request->all();
+        $data = $request->validate($this->comicValidation);
 
         $comic->update($data);
 
