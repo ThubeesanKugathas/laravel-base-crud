@@ -1,14 +1,41 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('home') }}">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('comics.index') }}">Comics List</a>
-          </li>
-        </ul>
-      </div>
+<nav class="d-flex justify-content-between align-items-center mx-auto">
+    <div class="ms_left">
+        <img src="{{ url('img/dc-logo.png') }}" alt="dc-logo">
     </div>
-  </nav>
+    
+    <!-- bar right side del flex container -->
+    <div class="ms_right">
+        <ul  class="d-flex">
+            <li>
+                <a href="/#">CHARACTERS</a>
+            </li>
+            <li>
+                <a href="{{ route('comics.index') }}">COMICS</a>
+            </li>
+            <li>
+                <a href="/#">MOVIES</a>
+            </li>
+            <li>
+                <a href="/#">TV</a>
+            </li>
+            <li>
+                <a href="/#">GAMES</a>
+            </li>
+            <li>
+                <a href="/#">COLLECTIBLES</a>
+            </li>
+            <li>
+                <a href="/#">VIDEOS</a>
+            </li>
+            <li>
+                <a href="/#">FANS</a>
+            </li>
+            <li>
+                <a href="/#">NEWS</a>
+            </li>
+            <li>
+                <a href="/#">SHOP</a>
+            </li>
+        </ul>
+    </div>
+</nav>

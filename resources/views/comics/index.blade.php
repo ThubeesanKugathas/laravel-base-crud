@@ -3,40 +3,22 @@
 @section('pageTitle', 'FULL LIST')
 
 @section('mainContent')
-    <div class="d-flex">
-        <h1>COMICS LIST</h1>
-        <a href="{{ route('comics.create') }}">ADD NEW COMIC</a>
-    </div>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>title</th>
-                <th>price</th>
-                <th>sale_date</th>
-                <th>type</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach($dati as $comic)
-                <tr>
-                    <th>{{ $comic->title }}</th>
-                    <th>{{ $comic->price }}</th>
-                    <th>{{ $comic->sale_date }}</th>
-                    <th>{{ $comic->type }}</th>
-                    <th>
-                        <a href="{{ route('comics.show', $comic->id) }}">Details</a>
-                    </th>
-                    <th>
-                        <a href="{{ route('comics.edit', $comic->id) }}">Change</a>
-                    </th>
-                    <th>
-                        @include('partials.deleteLink', [
-                            "route" => 'comics.destroy',
-                            "id" => $comic->id
-                        ])
-                    </th>
-                </tr>
+    <main>
+        <div class="ms_main-one d-flex mx-auto justify-content-around flex-wrap position-relative">
+            @foreach ($dati as $comic)
+                <div class="ms_comics-card">
+                    <div class="ms_card-image">
+                        <a href="{{ route('comics.show', $comic->id) }}">
+                            <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
+                        </a>
+                    </div>
+                    <p>{{ $comic->series }}</p>
+                </div>
             @endforeach
-        </tbody>
-    </table>
+        </div>
+
+        <span id="main-one-span" class="mx-auto d-table">
+            <a href="{{ route('comics.create') }}">ADD NEW COMIC</a>
+        </span>
+    </main>
 @endsection

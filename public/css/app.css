@@ -12173,3 +12173,208 @@ fieldset:disabled .btn {
   }
 }
 
+ul {
+  list-style: none;
+}
+
+.ms_mini-header {
+  background-color: #08f;
+}
+
+.ms_mini-header div {
+  width: 1200px;
+}
+
+.ms_mini-header div span {
+  color: #fff;
+  font-size: 10px;
+}
+
+.ms_mini-header div span:first-child {
+  margin-right: 30px;
+}
+
+nav {
+  width: 1200px;
+  height: 100%;
+  padding: 20px 0;
+}
+
+nav .ms_left img {
+  height: 80px;
+}
+
+nav .ms_right ul li {
+  margin: 0 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+nav .ms_right ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav .ms_right ul li a:hover {
+  padding-bottom: 55px;
+  border-bottom: 3px solid #08f;
+  color: #08f;
+}
+
+nav .ms_right ul li:last-child {
+  margin-right: 0;
+}
+
+.ms_jumbotron {
+  height: 400px;
+  background: url("/img/jumbotron.jpg") no-repeat;
+  background-size: cover;
+}
+
+main {
+  background-color: #222;
+  color: #fff;
+  padding: 45px 0 30px;
+}
+
+main .ms_main-one {
+  width: 1200px;
+}
+
+main .ms_main-one .ms_current-series {
+  top: -70px;
+  left: 0%;
+  background-color: #08f;
+  padding: 10px 15px;
+}
+
+main .ms_main-one .ms_comics-card {
+  width: calc((100% - 150px) / 6);
+  margin-top: 20px;
+}
+
+main .ms_main-one .ms_comics-card a {
+  width: 100%;
+}
+
+main .ms_main-one .ms_comics-card a .ms_card-image {
+  height: 180px;
+  overflow: hidden;
+}
+
+main .ms_main-one .ms_comics-card p {
+  margin: 20px 0 30px;
+}
+
+main span {
+  padding: 10px 50px;
+  background-color: #08f;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main span a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main span:hover {
+  text-decoration: underline;
+}
+
+.ms_main-two {
+  background-color: #08f;
+  height: 150px;
+}
+
+.ms_main-two ul {
+  height: 100%;
+  width: 1200px;
+}
+
+.ms_main-two ul li img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+.ms_main-two ul li p {
+  color: #fff;
+}
+
+.ms_main-two ul li p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.ms_footer-one {
+  height: 400px;
+  background: url("/img/footer-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.ms_footer-one .ms_container {
+  width: 1200px;
+}
+
+.ms_footer-one .ms_container .ms_list li {
+  margin-right: 20px;
+}
+
+.ms_footer-one .ms_container .ms_list p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.ms_footer-one .ms_container .ms_list a {
+  text-decoration: none;
+  color: #888;
+}
+
+.ms_footer-one .ms_container .ms_list a:hover {
+  color: #fff;
+}
+
+.ms_footer-one .ms_container img {
+  height: 400px;
+}
+
+.ms_footer-two {
+  height: 80px;
+  background-color: #333;
+}
+
+.ms_footer-two .ms_container {
+  width: 1200px;
+  height: 100%;
+}
+
+.ms_footer-two .ms_container p {
+  color: #fff;
+  border: 2px solid #08f;
+  padding: 7px 10px;
+  font-size: 20px;
+}
+
+.ms_footer-two .ms_container p:hover {
+  cursor: pointer;
+  background-color: #08f;
+  border: 2px solid #fff;
+}
+
+.ms_footer-two .ms_container ul li {
+  margin: 0 10px;
+}
+
+.ms_footer-two .ms_container ul li:first-child {
+  color: #08f;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ms_footer-two .ms_container ul li img:hover {
+  filter: brightness(1.7);
+  cursor: pointer;
+}
+

@@ -1,0 +1,43 @@
+@import '../variables.scss';
+
+.ms_footer-two {
+    height: 80px;
+    background-color: $grey-color;
+
+    .ms_container {
+        width: 1200px;
+        height: 100%;
+
+        // left side ----------------------------------------
+        p {
+            color: $white-color;
+            border: 2px solid $blue-color;
+            padding: 7px 10px;
+            font-size: 20px;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $blue-color;
+                border: 2px solid $white-color;
+            }
+        }
+        
+        // right side ---------------------------------------
+        ul {
+            li {
+                margin: 0 10px;
+
+                &:first-child {
+                    color: $blue-color;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                img:hover {
+                    filter: brightness(1.70);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

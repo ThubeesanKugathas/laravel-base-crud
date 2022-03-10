@@ -1,0 +1,56 @@
+@import '../variables.scss';
+
+main {
+    background-color: #222;
+    color: $white-color;
+    padding: 45px 0 30px;
+
+    .ms_main-one {
+        width: 1200px;
+
+        // position absolute tag ------------------------------------------
+        .ms_current-series {
+            top: -70px;
+            left: 0%;
+            background-color: $blue-color;
+            padding: 10px 15px;
+        }
+
+        // comics cards ---------------------------------------------------
+        .ms_comics-card {
+            width: calc((100% - 150px) / 6);
+            margin-top: 20px;
+
+            a {
+                width: 100%;
+                
+                .ms_card-image {
+                    height: 180px;
+                    overflow: hidden;
+                }
+            }
+
+            p {
+                margin: 20px 0 30px;
+            }
+        }
+    }
+
+    // load more button ----------------------------------------------------------
+    span {
+        padding: 10px 50px;
+        background-color: $blue-color;
+        font-weight: bold;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            color: $white-color;
+
+        }
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

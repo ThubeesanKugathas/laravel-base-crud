@@ -8,9 +8,15 @@
     <title>COMICS | @yield('pageTitle')</title>
 </head>
 <body>
-
+    @include('partials.miniheader')    
     @include('partials.navbar')
 
+    <div class="ms_jumbotron"></div>
+
+
     @yield('mainContent')
+
+    @include('partials.footerBox1')
+    @include('partials.footerBox2')
 </body>
 </html>
